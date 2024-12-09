@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: verdana;
+}
+
+body {
+    background-color: rgb(84, 73, 73);
+}
+
+#container {
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+header span {
+    color: #ff0000;
+    text-shadow: 3px 3px 5px #000000;
+    letter-spacing: 7px;
+}
+
+nav button {
+    display: none;
+    background-color: #fff;
+}
+
+nav span {
+    /*alt alta üç menü çizgisi*/
+    display: block;
+    width: 40px;
+    border-bottom: 3px solid #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    /*ul a yükseklik veriyoruz çünkü hover durumunda çıkan kırmızı border yüzünden yazıda kayma olmasın. sabit olsun*/
+}
+
+nav ul a {
+    color: #ffffff;
+    font-size: 20px;
+    display: block;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+nav ul a:hover {
+    background-color: #ff0000;
+}
+
+nav ul:hover {
+    border-bottom: 3px solid #ff0000;
+}
+
+@media only screen and (max-width:768px) {
+    #container {
+        width: 100%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    nav button {
+        display: block;
+        margin-left: 20px;
+
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        height: calc(100vh - 120px);
+        background-color: #ffffff;
+
+    }
+    nav ul a{
+        color:#000000;
+    }
+}
