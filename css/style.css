@@ -76,6 +76,7 @@ nav ul:hover {
     background-image: url(../images/pic01.jpg);
     background-size: 1200px 500px;
     margin-top: 20px;
+    margin-bottom: 20px;
     overflow: hidden;
     position: relative;
 }
@@ -122,6 +123,46 @@ nav ul:hover {
     font-size: 40px;
     color: rgb(126, 123, 123);
 }
+#card{
+    background-color:#ffffff;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#card div{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.h2{
+    width: 100%;
+    font-size: 20px;
+    color: #000000;
+    text-transform:uppercase;
+}
+.p{
+    width: 100%;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+    line-height: 22px;
+}
+.buton{
+    display: block;
+    width: 250px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
 
 @media only screen and (max-width:768px) {
     #container {
@@ -167,5 +208,19 @@ nav ul:hover {
     .ilerigeri{
         height: 250px;
 
+    }
+    #card{
+        padding: 10px;
+        display: block;
+
+    }
+    #card div{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .buton{
+        width: 80%;
+        padding-left: 20px;
     }
 }

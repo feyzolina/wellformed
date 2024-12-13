@@ -11,9 +11,9 @@ var left_deger;
 function slayt() {
     left_deger = 0;
     autogecis = setInterval(function () {
-        document.querySelector("#serit").style.left = (left_deger) + "%";
-        left_deger -= 100;
-        if (left_deger == -300) {
+        document.querySelector("#serit").style.left = (left_deger) + "px";
+        left_deger -= 1200;
+        if (left_deger == -3600) {
             left_deger = 0;
         }
     }, 2000);
@@ -29,22 +29,22 @@ document.querySelector(".ilerigeri").addEventListener("mouseout", function () {
 
 //bu da oklarla kaydırma
 function left() {
-    if (left_deger == -200) {
+    if (left_deger == -2400) {
         left_deger = 0;
-        document.querySelector("#serit").style.left = (left_deger) + "%";
+        document.querySelector("#serit").style.left = (left_deger) + "px";
     } else {
-        left_deger -= 100;
-        document.querySelector("#serit").style.left = (left_deger) + "%";
+        left_deger -= 1200;
+        document.querySelector("#serit").style.left = (left_deger) + "px";
     }
-
+   
 }
 function right() {
     if (left_deger == 0) {
-        left_deger = -200;
-        document.querySelector("#serit").style.left = (left_deger) + "%";
+        left_deger = -2400;
+        document.querySelector("#serit").style.left = (left_deger) + "px";
     } else {
-        left_deger += 100;
-        document.querySelector("#serit").style.left = (left_deger) + "%";
+        left_deger += 1200;
+        document.querySelector("#serit").style.left = (left_deger) + "px";
     }
-
+    
 }
