@@ -227,6 +227,20 @@ footer {
 
 }
 
+#up {
+    width: 70px;
+    height: 70px;
+    background-color: beige;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    border-radius: 50px;
+    right: 20px;
+    bottom: 20px;
+
+}
+
 @media only screen and (max-width:768px) {
     #container {
         width: 100%;
