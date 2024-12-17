@@ -48,3 +48,9 @@ function right() {
     }
 
 }
+function modal_open() {
+    document.querySelector("modal").style.display = "flex";
+}
+function modal_close() {
+    document.querySelector("modal").style.display = "none";
+}

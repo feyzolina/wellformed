@@ -27,7 +27,7 @@
         <main>
             <section id="slider">
                 <div class="ilerigeri">
-                    <span onclick="left()"><</span>
+                    <!-- <span onclick="left()"><</span> -->
                     <span onclick="right()">></span>
                 </div>
                 <div id="serit">
@@ -56,7 +56,8 @@
                 </div>
                 <div>
                     <h2 class="h2">Lorem ipsum.</h2>
-                    <p class="p">Lorem isum dolor sit amet consectetur adipisicing elit. Ducimus itaque nesciunt repellendus iusto?</p>
+                    <p class="p">Lorem isum dolor sit amet consectetur adipisicing elit. Ducimus itaque nesciunt
+                        repellendus iusto?</p>
                     <a href="#" class="buton">Lorem, ipsum.</a>
                 </div>
                 <div>
@@ -65,11 +66,35 @@
                     <a href="#" class="buton">Lorem, ipsum.</a>
                 </div>
             </section>
-            <section></section>
-            <footer></footer>
+            <section id="end_card">
+                <div>
+                    <h2 class="h2">Lorem ipsum.</h2>
+                    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, aspernatur?</p>
+                    <a href="#" class="buton" onclick="modal_open()">Lorem, ipsum.</a>
+                </div>
+                <div>
+                    <h2 class="h2">Lorem ipsum.</h2>
+                    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, aspernatur?</p>
+                    <a href="#" class="buton" onclick="modal_open()">Lorem, ipsum.</a>
+                </div>
+            </section>
+            <footer>
+
+            </footer>
         </main>
     </div>
+
+    <div id="modal">
+        <div id="modal_body">
+            <button id="close" onclick="modal_close()">X</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, odio?</p>
+            <button>EVET</button>
+            <button>HAYIR</button>
+        </div>
+    </div>
+    <button onclick="boyut()">boyut</button>
     <script src="js/script.js"></script>
+    <script src="window.js"></script>
 </body>
 
 </html>
