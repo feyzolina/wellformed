@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function(){$("button").click(function(){$("div").fadeToggle();});});
+        $(document).ready(function () { $("button").click(function () { $("div").slideToggle(); }); });
+        $(document).ready(function () { $("#hareket").click(function () { $(this).animate({ width: "400px" }, 3000); }); });
+        $(document).ready(function(){
+            $("a").click(function(){
+                $("html,body").animate({ scrollTop: 0 }, 1000);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div style="display:none; height: 100px; background-color: rgb(120, 125, 180);"><p>Lorem ipsum dolor sit amet.</p></div>
+    <button>tıkla</button>
+    <div id="hareket" style="height: 1200px; width: 150px; background-color: aqua;"></div>
+    <a href="#">yukarı</a>
+</body>
+
+</html>
